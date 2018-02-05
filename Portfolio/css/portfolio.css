@@ -1,4 +1,33 @@
-.top{
-  background-color: #96B48B;
+body{
+  font-size: small monospace;
+  background-color: #666;
+  line-height: 1.5;
 
+}
+
+.container-fluid{
+    background-color: #96B48B;
+}
+
+.top{
+
+}
+
+header.top h1{
+  color: white;
+  font-family: Lobster, Monospace;
+  display: inline;
+
+}
+
+
+.top li{
+  display: inline;
+  float: right;
+}
+
+.top a{
+  color: #777;
+  text-decoration: none;
+  padding: 10px 20px;
 }
