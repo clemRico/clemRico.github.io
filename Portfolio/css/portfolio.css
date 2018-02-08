@@ -14,10 +14,22 @@ body{
     /* border-bottom: 1px solid #EAEAEB; */
     text-align: right;
     height: 50px;
-    line-height:50px;
-     margin-top: 2px;
+    line-height:60px;
+    padding-top: 5px;
+    margin-bottom: 23px;
 }
 
+header.top h1{
+
+  display: inline;
+  float: left;
+  position: relative;
+  left: 5px;
+  bottom:8px;
+  color: white;
+  font-family: Lobster, Monospace;
+
+}
 .menu{
     margin: 0 5px 0 0 ;
 
@@ -43,8 +55,8 @@ color:#e7e7e7
 }
 
 label{
-    margin: 0 40px 0 0;
-    font-size: 30px;
+    margin: 10px 15px 0px 0;
+    font-size: 40px;
     line-height: 50px;
     display: none;
     width: 26px;
@@ -53,15 +65,16 @@ label{
 
 #toggle{
     display: none;
+
+
 }
 
 @media only screen and (max-width: 767px){
     label{
-
       display: block;
       cursor: pointer; /*change the mouse pointer*/
-
     }
+
     .menu {
       margin-top:68px;
       border-top: 0px;
@@ -69,30 +82,26 @@ label{
       width: 100%;
       display: none;
     }
+
     .menu a{
       display:block;
       border-bottom: 1px solid #EAEAEB;
       margin: 0;
-
     }
 
     #joker{
       border-top: 1px solid #EAEAEB;
     }
+
     #toggle:checked + .menu{
       display: block;
     }
+
+    #about p{
+      margin-top: 70px;}
 }
 
-
-header.top h1{
-
-  display: inline-block;
-  float: left;
-  position: relative;
-  left: 5px;
-  bottom:15px;
-  color: white;
-  font-family: Lobster, Monospace;
-
-}
+#about p{
+    padding: 70px 10% 50px;
+    line-height: 1.7;
+  }
