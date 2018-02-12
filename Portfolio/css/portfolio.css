@@ -37,21 +37,21 @@ header.top h1{
 
 .menu a{
    clear: right;
-   background-color: #96B48B;
+   background-color: #333;
    text-decoration: none;
    color: gray;
-   margin: 0 10px 0 10px;
+   margin: 0;
+   margin-right: -4px;
    line-height: 35px;
-
+   padding: 10px;
 }
 
-#joker{
-  margin-left: 0;
-  padding-left: 0;
-}
+.menu #joker{
+   background-color:#bbb;
 
+}
 span{
-color:#e7e7e7
+color:#333;
 }
 
 label{
@@ -65,17 +65,23 @@ label{
 
 #toggle{
     display: none;
-
-
 }
+
+#about p{
+padding: 70px 10% 50px;
+line-height: 1.7;
+font-size: 20px;
+}
+
 
 @media only screen and (max-width: 767px){
     label{
-      display: block;
+      display: block;  /*label becomes block pushing down .menu class*/
       cursor: pointer; /*change the mouse pointer*/
     }
 
     .menu {
+
       margin-top:68px;
       border-top: 0px;
       text-align: center;
@@ -85,6 +91,7 @@ label{
 
     .menu a{
       display:block;
+      background-color: #333;
       border-bottom: 1px solid #EAEAEB;
       margin: 0;
     }
@@ -95,13 +102,15 @@ label{
 
     #toggle:checked + .menu{
       display: block;
-    }
+      margin-bottom: -100px;
+      }
 
     #about p{
-      margin-top: 70px;}
-}
-
-#about p{
-    padding: 70px 10% 50px;
+    margin:70px 10% 50px;
     line-height: 1.7;
   }
+    #about p{
+      line-height: 1.7;
+    }
+
+}
