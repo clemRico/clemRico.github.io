@@ -66,26 +66,39 @@ label{
 
 #toggle{
     margin-top: 10px;
-
     display: none;
 }
 
 #about{
   background-color: #aaa;
+
+
 }
 #about p{
 padding: 70px 10% 50px;
 line-height: 1.7;
 font-size: 20px;
 color: #fff;
+margin-right: 150px;
 }
 
 #hrAbout{
-  margin: -1em 50px;
-  border-width: 2.5px;
+margin: 0 200px 0 50px;
+
 }
 
+#profPic{
+  display: inline;
+  float: right;
+  position: relative;
+  right: 15px;
+  bottom:200px;
+}
+#profPic2{
+display: none;
+}
 @media only screen and (max-width: 767px){
+
     label{
       display: block;  /*label becomes block pushing down .menu class*/
       cursor: pointer; /*change the mouse pointer*/
@@ -138,10 +151,26 @@ color: #fff;
     margin: -1em 50px -7.5em 50px;
 
   }
-}
 
-@media (min-width: 320px) and (max-width: 480px) {
+  #profPic{
+  display: none;
+  }
+  #profPic2{
+    display: inline;
+    position: relative;
+    right: 80px;
+    left:auto;
+    top: auto;
+    bottom: 25px;
 
+  }
+  }
+
+
+@media only screen and (max-width: 480px) {
+  #about{
+    text-align: center;
+  }
   #about p{
   margin:70px 10% 50px;
   margin-bottom: 0px;
@@ -159,4 +188,17 @@ color: #fff;
     margin-top: 0px;
     padding-top: 0;
 
-}
+  }
+
+  #profPic{
+    display: none;
+  }
+
+  #profPic2{
+  display: inline;
+  position: relative;
+  right: auto;
+  left: auto;
+  top: auto;
+  bottom: 25px;
+  }
