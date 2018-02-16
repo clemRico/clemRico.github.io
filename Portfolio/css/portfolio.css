@@ -15,8 +15,9 @@ body{
     text-align: right;
     height: 50px;
     line-height:60px;
-    padding-top: 5px;
-    margin-bottom: 23px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 13px;
 }
 
 header.top h1{
@@ -31,7 +32,7 @@ header.top h1{
 
 }
 .menu{
-    margin: 0 5px 0 0 ;
+    margin: 0px 5px 0 0 ;
 
 }
 
@@ -64,15 +65,25 @@ label{
 }
 
 #toggle{
+    margin-top: 10px;
+
     display: none;
 }
 
+#about{
+  background-color: #aaa;
+}
 #about p{
 padding: 70px 10% 50px;
 line-height: 1.7;
 font-size: 20px;
+color: #fff;
 }
 
+#hrAbout{
+  margin: -1em 50px;
+  border-width: 2.5px;
+}
 
 @media only screen and (max-width: 767px){
     label{
@@ -80,13 +91,16 @@ font-size: 20px;
       cursor: pointer; /*change the mouse pointer*/
     }
 
+    .nav{
+      margin-bottom: 23.5px;
+    }
+
     .menu {
 
-      margin-top:68px;
-      border-top: 0px;
       text-align: center;
       width: 100%;
       display: none;
+
     }
 
     .menu a{
@@ -94,23 +108,55 @@ font-size: 20px;
       background-color: #333;
       border-bottom: 1px solid #EAEAEB;
       margin: 0;
+
     }
 
     #joker{
       border-top: 1px solid #EAEAEB;
     }
+    #toggle {
+      padding-top: -70px;
+
+    }
+
+
 
     #toggle:checked + .menu{
+      padding-top: 70px;
       display: block;
-      margin-bottom: -100px;
+      margin-bottom: -70px;
+
       }
 
     #about p{
     margin:70px 10% 50px;
+    margin-bottom: 0px;
     line-height: 1.7;
   }
-    #about p{
-      line-height: 1.7;
-    }
+
+  #hrAbout{
+    margin: -1em 50px -7.5em 50px;
+
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  #about p{
+  margin:70px 10% 50px;
+  margin-bottom: 0px;
+  padding-top: 20px;
+  line-height: 1.3;
+  text-align: center;
+  font-size: 120%;
+  }
+
+  #hrAbout{
+    margin: -20px 50px -60px 50px;
+  }
+
+  #about2 {
+    margin-top: 0px;
+    padding-top: 0;
 
 }
