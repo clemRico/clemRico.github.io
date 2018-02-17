@@ -151,9 +151,15 @@ display: none;
   border-style: outset;
   border-width: 4px;
 }
-
+.wrapper{
+  margin: 0 auto;
+}
 #formSection{
   width: 50%;
+  height:600px;
+  float: left;
+  background-color: #eee;
+  margin: auto;
 }
 
 #formSection form{
@@ -179,14 +185,18 @@ display: none;
 
 #infoSection{
   width: 50%;
+  height:600px;
+  float: left;
   font-size: 15px;
   text-align: left;
+  background-color: #eee;
 
 }
 
 #infoSection p{
-  width: 150%;
-  margin-left: 50PX;
+  /* width: 150%; */
+  padding-top: 20px 0 0 10px;
+  margin: auto;
   font-size: 20px;
   line-height: 1.5;
 }
