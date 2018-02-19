@@ -121,6 +121,7 @@ display: none;
 
 #portfolioLink .pics{
       list-style: none;
+      padding-right: 20px;
 }
 #portfolioLink li{
   display: inline-block;
@@ -160,6 +161,7 @@ display: none;
   float: left;
   background-color: #eee;
   margin: auto;
+  padding: 0 50px;
 }
 
 #formSection form{
@@ -190,6 +192,7 @@ display: none;
   font-size: 15px;
   text-align: left;
   background-color: #eee;
+  padding: 0 50px;
 
 }
 
@@ -199,6 +202,47 @@ display: none;
   margin: auto;
   font-size: 20px;
   line-height: 1.5;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+  #portfolioLink img{
+    width: 600px;
+    height: 600px
+  }
+  .wrapper{
+    margin-top: 0 auto;
+
+  }
+  #formSection{
+    float: initial;
+    margin: 0 500px 0 60px;
+    padding: 0 50px;
+    width:80%;
+  }
+
+  #formSection form{
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    margin: 0 auto;
+
+  }
+
+  #formSection .inputStyle{
+    width: 100%
+  }
+
+  #infoSection{
+    float: initial;
+    margin: 0 0px 0 60px;
+    padding: 0 50px;
+    width:80%;
+    line-height: 1.2
+
+
+  }
+
 }
 @media only screen and (max-width: 767px){
 
@@ -275,14 +319,51 @@ display: none;
     margin: 0 auto 0 auto;
   }
 
-  #portfolioLink img{
+  /* #portfolioLink img{
       width: 250px;
       height: 250px
+  } */
+  #portfolioLink img{
+    width: 600px;
+    height: 600px
+    margin:auto;
+  }
+  .wrapper{
+      margin-top: 0 auto;
+
+    }
+  #formSection{
+    float: initial;
+    margin: 0 500px 0 60px;
+    padding: 0 10px;
+    width:80%;
+
+  }
+
+  #formSection form{
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #formSection .inputStyle{
+    width: 100%
+  }
+
+  #infoSection{
+    float: initial;
+
+    margin: 0 0px 0 60px;
+    padding: 0 10px 0 10px;
+    width:80%;
+    line-height: 1.2
+
   }
   }
 
 
-@media only screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 520px) {
   #about{
     text-align: center;
   }
@@ -325,4 +406,43 @@ display: none;
       height: 200px
   }
 
+
+  .wrapper{
+    margin-top: 0 auto;
+
+  }
+  #formSection{
+    
+    text-align: center;
+    float: initial;
+    margin: -80px 400px 0 20px;
+    padding: 0 20px;
+    width:80%;
+    height: 100%;
+  }
+
+  #formSection form{
+    margin-bottom: 0;
+    padding: 0 10px 0 10px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+
+  #formSection .inputStyle{
+    font-size: 18px;
+  }
+  #formSection textarea{
+    height: 100px;
+  }
+  #infoSection{
+    float: initial;
+    margin: 0 0px auto 30px;
+    padding: 0 10px 0 10px;
+    width:80%;
+  }
+    #infoSection p{
+      line-height: 1.2;
+      font-size: 15px;
+  }
 }
