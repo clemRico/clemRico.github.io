@@ -21,6 +21,14 @@ body{
 
 }
 
+header.top{
+  background-color: #96B48B;
+  width: 100%;
+  /* position: fixed; */
+  z-index: 10;
+
+}
+
 header.top h1{
 
   display: inline;
@@ -34,6 +42,7 @@ header.top h1{
 }
 .menu{
     margin: 0px 5px 0 0 ;
+
 
 }
 
@@ -74,6 +83,7 @@ label{
   background-color: #aaa;
   display: block;
   margin-bottom: 0px;
+
 }
 #about p{
 padding: 70px 10% 50px;
@@ -204,7 +214,40 @@ display: none;
   line-height: 1.5;
 }
 
+.scroll-top{
+  width: 30%;
+  margin-top: 20%;
+  position: fixed;
+  z-index: 10;
+}
+
+.fas{
+font-size: 40px;
+color:rgba(160,226,181,0.4);
+padding: 5px 10px;
+border: 1px solid rgba(253,253,250,0.4);
+border-radius: 50%;
+transition: color 2s;
+transition: background-color 2.5s ease-out; /*progress bro!!!*/
+}
+
+.fas:hover, .fas:focus {
+
+color:rgba(30, 30, 30,0.3);
+background-color:rgb(253,253,250);
+border: 1px solid rgba(253,253,250,0.4)
+border-radius: 50%;
+
+}
+
 @media (min-width: 768px) and (max-width: 1024px){
+
+  .scroll-top{
+    width: 30%;
+    margin-top: 60%;
+    position: fixed;
+    z-index: 10;
+  }
 
   #portfolioLink img{
     width: 600px;
@@ -246,7 +289,12 @@ display: none;
 }
 @media only screen and (max-width: 767px){
 
-
+  .scroll-top{
+    width: 30%;
+    margin-top: 70%;
+    position: fixed;
+    z-index: 10;
+  }
 
     label{
       display: block;  /*label becomes block pushing down .menu class*/
@@ -412,7 +460,7 @@ display: none;
 
   }
   #formSection{
-    
+
     text-align: center;
     float: initial;
     margin: -80px 400px 0 20px;

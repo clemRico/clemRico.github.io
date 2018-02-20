@@ -7,12 +7,14 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
      <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <link rel="stylesheet" type="text/css" href="css/portfolio.css">
   </head>
 
   <body>
      <div class="container-fluid">
-       <header class="top">
+       <header class="top" id="top1">
            <div class="row">
              <div class="col-xs-2">
              </div>
@@ -23,8 +25,8 @@
                <!--just a test comment-->
                <div class="menu">
                   <a href="#" id="joker"><span>ABOUT</span></a>
-                  <a href="#">PORTFOLIO</a>
-                  <a href="#">CONTACT</a>
+                  <a href="#portfolioLink">PORTFOLIO</a>
+                  <a href="#contactsLink">CONTACT</a>
                </div>
 
                <div id="about" class="intro">
@@ -109,9 +111,45 @@
 
              </div>
              <div class="col-xs-2">
+               <div class="scroll-top">
+                 <a href="#top1"><i class="fas fa-angle-double-up"></i></i></a>
+               </div>
+
              </div>
 
            </div>
        </header>
 
+
+
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
 </html>
