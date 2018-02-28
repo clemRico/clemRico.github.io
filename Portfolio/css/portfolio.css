@@ -429,18 +429,31 @@ display: none;
 @media only screen and (max-width: 767px){
 
   #scroll-top{
+
       width: 30%;
       margin-top: 70%;
+      margin-left: -3.5%;
       position: fixed;
       z-index: 10;
   }
 
   #scroll-bottom{
+
       width: 30%;
       margin-top: 70%;
-      margin-left: 5%;
+      margin-left: -1.5%;
       position: fixed;
       z-index: 10;
+  }
+
+  #scroll-bottom i{
+      font-size: 23px;
+
+  }
+
+  #scroll-top i{
+      font-size: 23px;
+
   }
     label{
         display: block;  /*label becomes block pushing down .menu class*/
