@@ -1,0 +1,62 @@
+html,body{
+  font: large Lato;
+  margin: 0; /*removes default margin that the browser assigns*/
+  padding: 0; /*removes default padding the browser assigns*/
+  height: 100%; /*Displays the picture full height*/
+  width: 100%;   /*Displays the picture full width*/
+}
+
+.intro{
+  height: 100%; /*Displays the picture full height*/
+  width: 100%;   /*Displays the picture full width*/
+  background: url("../images/guitarman.jpg") no-repeat 50% 50%;
+}
+
+.wrapper{
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.content h1{
+  color: rgba(255,255,255, 0.9);
+  padding: 30px 0;
+  font-size: 70px;
+  font-weight: bolder;
+  text-transform: uppercase;
+
+
+}
+
+.content a{
+  color: rgba(255,255,255, 0.8);
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: background-color 1.2s;
+}
+
+.content a:hover{
+  color: rgba(255,255,255, 0.6);
+  background: rgba(0, 0, 0, 0.8);
+  border: solid 0.5px rgba(153, 51, 0, 0.3);
+}
+
+@media (max-width: 767px) {
+
+.content h1
+{
+    font-size: 50px;
+    width: 98%;
+
+
+}
+
+.content a{
+  display: block;
+  margin-bottom: 10px;
+}
+}
