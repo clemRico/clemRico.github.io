@@ -3,7 +3,7 @@ html,body{
   margin: 0; /*removes default margin that the browser assigns*/
   padding: 0; /*removes default padding the browser assigns*/
   height: 100%; /*Displays the picture full height*/
-  /* width: 100%;   /*Displays the picture full width*/ */
+ width: 100%;   /*Displays the picture full width*/ */
 }
 
 
@@ -13,14 +13,16 @@ html,body{
   background: url("../images/travelBG.jpg") no-repeat;
   background-position: center;
   background-size: cover; /*Fills the entire page*/
-
+  position: relative;
+  border-bottom:  1px solid rgba(239,239,239,.7);
+  border-right:  1px solid rgba(239,239,239,0.8);
 
 }
 
 .topBG h1{
   float: left;
   margin-left: 20px;
-  margin-top: 8px;
+  margin-top: 22px;
 }
 .topBG a{
    text-decoration: none;
@@ -39,28 +41,30 @@ label{
 #toggle{
     margin-top: 10px;   /*This is the checkbox*/
     display: none;
+    position: relative;
 }
 
 
 .nav {
     margin: 0 2px 0 0;
-    padding: 0;
+    padding:10px 0 10px 0;
     /*You remove the overflow hidden here,
     and you were able to solve it. Don't give up you can do this*/
     background-color: transparent;
-    border-bottom:  1px solid rgba(239,239,239,.7);
-    border-right:  1px solid rgba(239,239,239,0.8);
-
+    position: absolute;
+    right: 0;
 }
 
- .nav > li {
-    float: right;
+.nav > li {
+    float: left;
     list-style-type: none;
     text-align: center;
     color: #696969;
     padding: 14px 16px;
     text-transform: uppercase;
-    position: relative;
+    position: relative;   /*This is the part whe you hover the div will show with absolute
+    position*/
+    right: 0;
 }
 
 .nav li > a {
@@ -71,13 +75,32 @@ label{
 .nav >li >a:hover{
     color:#a8a8a8;
 }
+.fa-angle-down{
+  margin-left: 4px;
+  vertical-align: top;
+  font-size: 18px;
+  color: rgba(105, 105, 105,0.7)
+}
 
+.fa-search{
+
+  font-size: 20px;
+    color: rgba(105, 105, 105,0.8)
+}
+.fa-shopping-bag{
+  font-size: 20px;
+  color: rgba(105, 105, 105,0.8)
+
+}
+
+#searchIcon{
+  padding: 0 100px;
+}
 .nav > li .homeWrapper{
   position: absolute;
   left: 13px;
   top: 20px;
   background-color: #292929;
-
 }
 
 .nav >li:hover > div{
@@ -106,7 +129,9 @@ label{
 }
 
 @media only screen and  (max-width: 1000px) {
+
   label{
+    margin-top: 10px;
   display: block;
   cursor: pointer;
   background-color: white;
@@ -115,7 +140,8 @@ label{
 
   .nav{
     display: none;
-    background-color: orange;
+    background-color: transparent;
+    padding-right: 10px;
   }
 
   #toggle:checked + .nav{  /*This is the part where the UI changes whent the user click on the invisible checkbox*/
@@ -125,11 +151,19 @@ label{
     left: 0;
     top: 50px;
     width: 100%;
+    overflow: hidden;
+    overflow-x: hidden;
     }
 .nav li{
-  width: 100%;
+    width: 100%;
+    position: relative;
 }
- .nav .homeRelative{
+
+.fa-angle-down{
+    position: absolute;
+    right: 10%;
+}
+.nav .homeRelative{
     float: none;
     background-color: white;
     text-align: left;
@@ -139,11 +173,23 @@ label{
     display: none;
     }
 
-    #clickPagesWrapper{
+    #clickshopWrapper{
+        display: none;
+      }
+
+    #clickshopWrapper:target{
+       width: 100%;
+       display:block;
+       position: relative;
+       top: 0px;
+       left: 0;
+     }
+
+  #clickPagesWrapper{
       display: none;
     }
 
-    #clickPagesWrapper:target{
+  #clickPagesWrapper:target{
      width: 100%;
      display:block;
      position: relative;
@@ -152,10 +198,9 @@ label{
    }
   #clickHomeWrapper{
     display: none;
-    transition: 3s;
-  }
+    }
 
-   #clickHomeWrapper:target{
+  #clickHomeWrapper:target{
     width: 100%;
     display:block;
     position: relative;
