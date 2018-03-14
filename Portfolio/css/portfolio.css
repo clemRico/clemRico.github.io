@@ -137,10 +137,21 @@ display: none;
       display: inline-block;
       margin: 0 auto 0 auto;
 }
+
 #portfolioLink img{
       width: 400px;
       height: 400px
+      transition: 0.2s;
 }
+
+.box:hover {
+      transform:rotate(-10deg) scale(1.3);
+      height: auto;
+      width: auto;
+}
+
+
+
 
 
 #contactsLink{  /* this div should touch the #about div*/
@@ -490,7 +501,7 @@ display: none;
 
 
 
-    #toggle:checked + .menu{
+    #toggle:checked + .menu{  /*This is the part where the UI changes whent the user click on the invisible checkbox*/
         padding-top: 70px;
         display: block;
         margin-bottom: -70px;
