@@ -86,6 +86,23 @@ label{
   color: rgba(105, 105, 105,0.7);
 }
 
+.fa-angle-right{
+  margin-left: 50px;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+#l{
+  margin-left: 36.5px;
+}
+
+#ll{
+  margin-left:55px;
+}
+#lll{
+  margin-left: 65px;
+}
+
 .fa-search{
 
   font-size: 20px;
@@ -110,7 +127,7 @@ label{
 .nav > li .homeWrapper{
   position: absolute;
   left: 13px;
-  top: 28.6px;
+  top: 26px;
   background-color: #292929;
 }
 
@@ -123,19 +140,30 @@ label{
   width: 270px;
   display: none;
   top: 0;
+}
 
+#clickshopWrapper{
+  width: 405px;
+}
+
+#clickportfolioWrapper{
+  width: 185px;
+}
+
+#clickportfolioWrapper > div{
+  margin: 20px 25px s0px -10px;;
 }
 
 .homeWrapper div{
   display: inline-block;
-  margin: 20px 0;
+  margin: 20px 10px 20px -10px;
 }
 
 .places li, .places > a{
   list-style-type: none;
   color: white;
   text-align: left;
-  padding: 5px 5px 5px 0;
+  padding: 5px 5px 5px 0px;
   font-size: 12px;
   transition: color .009ms;
 }
@@ -143,6 +171,32 @@ label{
 .places > a:hover,.places li:hover{
   color: #696969;
   cursor: default;
+}
+
+
+#placesUl > li{
+  position: relative;
+}
+
+#clickConceptsWrapper{s
+  width: 155px;
+  position: absolute;
+  left: 130px;
+  top: -25px;
+  background-color: #292929;
+}
+
+#clickConceptsWrapper{
+  display: none;
+}
+
+#placesUl li:hover > div{
+  display: block;
+}
+
+#clickConceptsWrapper > div{
+  margin: 20px 5px 20px -10px;;
+
 }
 @media only screen and  (max-width: 1000px) {
 
@@ -152,7 +206,6 @@ label{
   cursor: pointer;
 
   }
-
 
   .nav{
     display: none;
