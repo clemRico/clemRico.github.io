@@ -432,7 +432,8 @@ label{
     }
 
   #clickshopWrapper, #clickPagesWrapper,#clickHomeWrapper,
-  #clickportfolioWrapper,#clickBlogWrapper,#clickSearchWrapper,#clickBagWrapper,#clickEngWrapper{
+  #clickportfolioWrapper,#clickBlogWrapper,#clickSearchWrapper,
+  #clickBagWrapper,  #clickEngWrapper{
         display: none;
     }
 
