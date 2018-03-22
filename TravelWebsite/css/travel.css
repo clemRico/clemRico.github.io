@@ -432,7 +432,7 @@ label{
     }
 
   #clickshopWrapper, #clickPagesWrapper,#clickHomeWrapper,
-  #clickportfolioWrapper,#clickBlogWrapper,#clickSearchWrapper{
+  #clickportfolioWrapper,#clickBlogWrapper,#clickSearchWrapper,#clickBagWrapper,#clickEngWrapper{
         display: none;
     }
 
@@ -454,7 +454,7 @@ label{
     display:block;
     position: relative;
     top: 20px;
-    left: 10px;
+    left: 4px;
 
   }
   #clickSocialWrapper{ /*this position is relative to #clickBagWrapper*/
@@ -467,20 +467,34 @@ label{
 }
 
 #clickSearchWrapper:target{
-    width: 100%;
+    width: 98%;
     display:block;
     position: relative;
     top: 20px;
-    left: 10px;
+    left: -10px;
+    right: -10px;
     margin-bottom:20px;
 }
 
 #search-div input[type=text] {
-   height: 60px;
-   width: 95%;
-   color: rgba(105, 105, 105,0.8);
-   border: 3px solid rgba(105, 105, 105);
-   font-weight: bolder;
-   outline: none;
+    height: 60px;
+    width: 100%;
+    color: rgba(105, 105, 105,0.8);
+    border: 3px solid rgb(105, 105, 105);
+    font-weight: bolder;
+    outline: none;
   }
+
+#clickBagWrapper:target,#clickEngWrapper{
+    width: 95%;
+    display:block;
+    position: relative;
+    top: 20px;
+    left: 4px;
+    right: -10px;
+    margin-bottom:20px;
+  }
+#bag-div hr{
+    width: 95%;
+}
 }
