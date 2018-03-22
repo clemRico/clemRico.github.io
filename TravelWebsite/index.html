@@ -8,8 +8,8 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=oswald' rel='stylesheet'>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head> -->
   <body>
     <section class="topBG">
           <h1><a href="index.html">Zeph's Adventure Time</a></h1>
@@ -183,7 +183,7 @@
                               </div>
                             <!-- <div class="nav-divider"></div> -->
                                 </div> <!--end div clickConceptsWrapper-->
-                            </li> <!--end of shop li concept-->
+                            </li> <!--end of Portfolio li concept-->
 
 
                         <li><a>PANGASINAN<i class="fas fa-angle-right" id="l"></i></a>
@@ -200,7 +200,7 @@
                                 </div>
                               <!-- <div class="nav-divider"></div> -->
                                   </div> <!--end div clickConceptsWrapper-->
-                              </li> <!--end of shop li PANGASINAN-->
+                              </li> <!--end of Portfolio li PANGASINAN-->
 
 
                         <li><a>PALAWAN<i class="fas fa-angle-right" id="ll"></i></a>
@@ -217,7 +217,7 @@
                               </div>
                             <!-- <div class="nav-divider"></div> -->
                                 </div> <!--end div clickConceptsWrapper-->
-                            </li> <!--end of shop li PANGASINAN-->
+                            </li> <!--end of Portfolio li PALAWAN-->
 
                         <li><a>SIARGAO</a></li>
                         <li><a>BAGUIO<i class="fas fa-angle-right" id="lll"></i></a>
@@ -234,20 +234,144 @@
                               </div>
                             <!-- <div class="nav-divider"></div> -->
                                 </div> <!--end div clickConceptsWrapper-->
-                            </li> <!--end of shop li PANGASINAN-->
+                            </li> <!--end of Portfolio li BAGUIO-->
                     </ul>
 
                   </div>
                 <div class="nav-divider"></div>
                     </div> <!--end div shopWrapper-->
-                </li> <!--end of shop li-->
+                </li> <!--end of Portfolio li-->
 
-            <li class="homeRelative"><a class="active" href="#clickblogWrapper">Blog<i class="fas fa-angle-down"></i></a></li>
-            <li class="homeRelative" id="searchIcon" ><a href="#"><i class="fas fa-search"></i></a></li>
-            <li class="homeRelative" id="bagIcon"><a href="#"><i class="fas fa-shopping-bag"></i></a></li>
-            <li class="homeRelative"><a href="#clickEngWrapper">ENG<i class="fas fa-angle-down"></i></a>
-          </ul>
+            <li class="homeRelative" id="blogLi"><a class="active" href="#clickBlogWrapper">Blog<i class="fas fa-angle-down"></i></a>
 
+              <div class="blogWrapper" id="clickBlogWrapper">
+                 <div class="home-div" id="blog-div2">
+                     <ul class="places" id="blogPlaces">
+                           <li><span id="title">Social<i class="fas fa-angle-right" id="b"></i></span>
+
+                             <div class="homeWrapper" id="clickSocialWrapper">
+                               <div class="home-div" id="social-div2">
+                                   <ul class="places" id="placesUl">
+                                       <li><span id="title">Social 1</i></span></li>
+                                       <li><a>Social 2</i></a></li>
+                                       <li><a>Social 3</i></a></li>
+                                       <li><a>Social 4</a></li>
+                                   </ul>
+
+                                 </div>
+                               <!-- <div class="nav-divider"></div> -->
+                                   </div> <!--end div clickConceptsWrapper-->
+
+
+                           </li>
+                           <li><a>Music<i class="fas fa-angle-right" id="bb"></i></a>
+
+                             <div class="homeWrapper" id="clickSocialWrapper">
+                               <div class="home-div" id="social-div2">
+                                   <ul class="places" id="placesUl">
+                                       <li><span id="title">Music 1</i></span></li>
+                                       <li><a>Music 2</i></a></li>
+                                       <li><a>Music 3</i></a></li>
+                                       <li><a>Music 4</a></li>
+                                   </ul>
+
+                                 </div>
+                               <!-- <div class="nav-divider"></div> -->
+                                   </div> <!--end div clickConceptsWrapper-->
+
+                           </li>
+                           <li><a>Motorcycles</a></li>
+                           <li><a>Cars</a></li>
+                           <li><a>Guitars<i class="fas fa-angle-right" id="bbb"></i></a>
+
+
+                             <div class="homeWrapper" id="clickSocialWrapper">
+                               <div class="home-div" id="social-div2">
+                                   <ul class="places" id="placesUl">
+                                       <li><span id="title">Guitars 1</i></span></li>
+                                       <li><a>Guitars 2</i></a></li>
+                                       <li><a>Guitars 3</i></a></li>
+                                       <li><a>Guitars 4</a></li>
+                                   </ul>
+
+                                 </div>
+                               <!-- <div class="nav-divider"></div> -->
+                                   </div> <!--end div clickConceptsWrapper-->
+                           </li>
+                     </ul>
+                   </div>
+                     <div class="nav-divider"></div>
+                     </div> <!--end div clickBlogWrapper-->
+
+             </li>
+            <li class="homeRelative" id="searchIcon" ><a href="#clickSearchWrapper"><i class="fas fa-search"></i></a>
+
+            <div class="searchWrapper" id="clickSearchWrapper">
+              <div class="home-div" id="search-div">
+                <form action="">
+                    <input type="text" name="FirstName" placeholder="TYPE HERE">
+                  </form>
+              </div>
+              </div> <!--end div clickSearchWrapper-->
+              </li>
+
+            <li class="homeRelative" id="bagIcon"><a href="#clickBagWrapper"><i class="fas fa-shopping-bag"></i></a>
+              <div class="searchWrapper" id="clickBagWrapper">
+                <div class="home-div" id="bag-div">
+
+                  <ul>
+                    <li>
+                      <a href="#" class="items">
+                        <div class="imahe">
+                        <img src="images/Ibanez.jpg" alt="guitar">
+                      </div>
+                        <div class="description">
+                          <span>Hollowbody Guitar</span><br>
+                          <span class="item">$399.90</span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="#" class="items">
+                          <div class="imahe">
+                        <img src="images/mailman.jpg" alt="bag">
+                          </div>
+                        <div class="description">
+                          <span>Mailman Bag</span>
+                          <span class="item">$99.90</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                   <hr>
+
+
+                  <div id="checkout">
+                     <button type="submit">Checkout</button>
+                  </div>
+                  <div id="total">
+                    <span class="cartTotal">Total: </span>
+                    <span class="priceTotal">$99.90</span>
+                  </div>
+                 </div> <!--End of checkout div-->
+
+
+
+                </div> <!--end div clickBagWrapper-->
+                </li>
+    <li class="homeRelative" id="engWrapper"><a href="#clickEngWrapper">ENG<i class="fas fa-angle-down"></i></a>
+
+            <div id="clickEngWrapper">
+               <div class="home-div" id="eng-div2">
+                   <ul class="places" id="language">
+                         <li><a href="#"><span id="title">Tagalog</span></a></li>
+    			               <li><a href="#"><span id="title">French</span></a></li>
+                  </ul>
+                </div>
+             </div> <!--end div #clickEngWrapper-->
+    </li>
+      </ul> <!--End ng UL .nav-->
     </section>
 
   </body>
