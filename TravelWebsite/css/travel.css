@@ -486,7 +486,7 @@ label{
     outline: none;
   }
 
-#clickBagWrapper:target,#clickEngWrapper{
+#clickBagWrapper:target,#clickEngWrapper:target{
     width: 95%;
     display:block;
     position: relative;
