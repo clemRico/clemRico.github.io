@@ -6,7 +6,6 @@ html,body{
   width: 100%;   /*Displays the picture full width*/
 }
 
-
 .topBG{
   height: 100%; /*Displays the picture full height*/
   width: 100%;   /*Displays the picture full width*/
@@ -14,8 +13,6 @@ html,body{
   background-position: center;
   background-size: cover; /*Fills the entire page*/
   position: relative;
-
-
 }
 
 .topBG h1{
@@ -42,7 +39,6 @@ label{
     display: none;
     position: relative;
 }
-
 
 .nav {
     margin: 0 2px 0 0;
@@ -376,6 +372,81 @@ label{
   display: block;
 }
 
+/*This is the Start of Section with id = inspireQoute
+****
+*****
+******
+*/
+
+#inspireQuote{
+  width: 100%
+
+}
+.quoteContainer{
+  width: 40%;
+  margin: 80px auto 20px auto;
+  text-align: center;
+  color: rgba(105, 105, 105,1.5);
+  font-size: larger;
+  line-height: 30px;
+}
+.quoteContainer img{
+  margin-top: 10px;
+  width: 207px;
+  height: 60px;
+  transform: skewY(-10deg);
+}
+.quoteHeading{
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+
+#socialMedia{
+  margin-top: 50px;
+  width: 100%
+  height: auto;
+  background-color: #DFDFDF;
+  padding: 60px 0px;
+}
+
+.socialMediaWrapper{
+  width: 60%;
+  margin: 80px auto 20px auto;
+
+}
+.addressContainer{
+  display: inline-block; /*change the display when windows reaches the tablet size*/
+  width: 500px;
+  text-align: center;
+  margin-right: 20px;
+  font-size: larger;
+}
+.socialHeading{
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-weight:bolder;
+  color: rgba(105, 105, 105,1.9);
+  text-transform: uppercase;
+}
+.addressContainer p:nth-child(2){
+  letter-spacing: 6px;
+  font-weight:bolder;
+  text-transform: uppercase;
+}
+
+.addressContainer p:nth-child(3){
+    color: rgba(105, 105, 105,1.5);
+    line-height: 30px;
+}
+.socialMediaPics{
+  display: inline-block; /*change the display when windows reaches the tablet size*/
+}
+.socialMediaPics img{
+width:150px;
+height: 150px;
+margin-right: 18px;
+}
 
 @media only screen and  (max-width: 1000px) {
 
