@@ -448,6 +448,67 @@ height: 150px;
 margin-right: 18px;
 }
 
+.zephyToursWrapper{
+  width: 60%;
+  margin: 60px auto 40px auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+/*Parallax Section will start here*/
+
+#imageHolder1{
+    height: 60vh;
+    width: 100%;
+    background-image: url("../images/nature1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  /*This the trick for the parallax effect*/
+    text-align: center;
+
+
+}
+.vertical-align > h1,#imageHolder3 > h1,#imageHolder2 > h1{
+    font-size: 50px;
+    color: white;
+    margin: 0;    /*this part removes the margin separating the divs*/
+
+}
+.vertical-align > p,#imageHolder3 > p,#imageHolder2 > p{
+  font-size: 18px;
+  color: white;
+  margin: 0;    /*this part removes the margin separating the divs*/
+
+}
+
+.vertical-align{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /*offset the top position to better center the elements*/
+}
+#imageHolder2{
+    height: 60vh;
+    width: 100%;
+    background-image: url("../images/nature2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; /*This the trick for the parallax effect*/
+    text-align: center;
+
+}
+#imageHolder3{
+    height: 60vh;
+    width: 100%;
+    background-image: url("../images/nature3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;/*This the trick for the parallax effect*/
+    text-align: center;
+
+}
+
 @media only screen and  (max-width: 1000px) {
 
   label{
