@@ -12,7 +12,7 @@
   </head> -->
   <body>
     <section class="topBG">
-          <h1><a href="index.html">Quinn's Adventure Time</a></h1>
+          <h1><a href="index.html">Clemys Adventure Time</a></h1>
           <label for="toggle">&#9776;</label>
           <input type="checkbox" id="toggle"/>
           <ul class="nav">
@@ -482,5 +482,105 @@
 
     </section>
 
+    <footer id="footerContainer">
+      <div id="footerWrapper1">
+
+
+      <div class="footerDivs" id="companyLogo">
+          <h1 id="logoClemy">Clemys Adventure</h1>
+        </div>
+
+        <div class="footerDivs" id="recentPosts">
+          <h3 id="test">Recent Posts</h3>
+          <hr>
+          <ul id="blogLinks">
+          <li><a href="#"><p>Must finished the UX Today</p></a>
+          April 03, 2018</li>
+
+          <li><a href="#"><p>Short break from coding</p></a>
+          April 02, 2018</li>
+
+
+          <li><a href="#"><p>Quinn wanted to buy a pug</p></a>
+          April 01, 2018</li>
+        </ul>
+          </div>
+
+
+          <div class="footerDivs" id="latestUpdates">
+           <h3>Latest Updates</h3>
+           <hr>
+           </div>
+
+           <div class="footerDivs" id="Instagram">
+           <h3>Instagram</h3>
+           <hr>
+           <div class="socialMediaPicsFooter"><img src="images/stream.jpg" alt="stream">  </div>
+           <div class="socialMediaPicsFooter"><img src="images/siargao1.jpg" alt="siargao">  </div>
+           <div class="socialMediaPicsFooter"><img src="images/siargao2.jpg" alt="siargao">  </div>
+           </div>
+        </div>
+
+    </footer>
+
+    <footer id="footerContainer2">
+    <div id="footerWrapper2">
+
+
+    <div class="footerDivs2" id="copyright">
+        <p>© Copyright 2018 - Zephyrian Planet!</p>
+    </div>
+
+         <div class="footerDivs2" id="socialMediaLinks">
+                 <ul id="socialMediaLinksFA">
+                   <li><a href="#"><i class="fab fa-facebook-f sIcons"></i></a></li>
+                   <li><a href="#"><i class="fab fa-twitter sIcons"></i></a></li>
+                   <li><a href="#"><i class="fab fa-instagram sIcons"></i></a></li>
+                 </ul>
+
+                 <!-- <div class="socialMediaPicsFooter"><img src="images/stream.jpg" alt="stream">   </div>
+                 <div class="socialMediaPicsFooter"><img src="images/siargao1.jpg" alt="siargao">   </div>
+                 <div class="socialMediaPicsFooter"> <img src="images/siargao2.jpg" alt="siargao">  </div> -->
+      </div>
+      </div>
+
+  </footer>
+  <footer id="toTopButtonContainer">
+      <div id="toTopButtonWrapper">
+
+        <div>
+          <a href="#clickHomeWrapper" id="toTopButton">TOP</a>
+        </div>
+      </div>
+  </footer>
+
+<!--The Sript below provides a smooth scrolling effect, w3schools. Next learning curve is Javascript-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+// Add smooth scrolling to all links
+$("a").on('click', function(event) {
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 1000, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  } // End if
+});
+});
+</script>
   </body>
 </html>
