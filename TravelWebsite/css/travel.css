@@ -395,12 +395,18 @@ label{
 
 }
 .quoteContainer{
-  width: 40%;
+  width: 100%;
   margin: 80px auto 20px auto;
   text-align: center;
   color: rgba(105, 105, 105,1.5);
   font-size: larger;
   line-height: 30px;
+}
+
+.quoteContainer >p{
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .quoteContainer img{
   margin-top: 10px;
@@ -420,14 +426,16 @@ label{
   height: auto;
   background-color: #DFDFDF;
   padding: 60px 0px;
+  text-align: center;
 }
 
 .socialMediaWrapper{
-  width: 60%;
-  margin: 80px auto 20px auto;
+  width: 100%;
+  margin: 50px auto 20px auto;
 
 }
 .addressContainer{
+
   display: inline-block; /*change the display when windows reaches the tablet size*/
   width: 500px;
   text-align: center;
@@ -549,7 +557,7 @@ margin-right: 18px;
 
 }
 
-.bookingSectionBox .bookingSectionBox-Row{
+.bookingSectionBox-Row{
   display: table-row;
 }
 
@@ -564,10 +572,11 @@ margin-right: 18px;
 }
 
 #bookNow-cell{
-    margin: 0;
+    width: 80%;
+    margin-left: auto;
+    margin-left: auto;
     display: table-cell;
-    height: 60vh;
-    width: 100%;
+    height: 60;
     letter-spacing: 3px;
     position: relative;
     background: rgba(black, 0.5);
@@ -575,9 +584,12 @@ margin-right: 18px;
 #content-cell{
 
     position: absolute;
-    top: 20%;
+    top: 10%;
     left: 20%;
-    right: 30%;
+    right: 20%;
+    margin: auto;
+    padding: auto;
+    vertical-align: top;
     /* translate:transformY(-20%); */
 }
 #content-cell ul{
@@ -614,20 +626,19 @@ margin-right: 18px;
   background-color: 	rgba(152, 118, 84, 1.0);
   width: 100%;
   height: 50vh;
-}
-
-#newsletterSection{
-  position: relative;
+  margin-top: -32.5px;
   color: #fff;
 }
 
 .newsletterSectionWrapper{
-  position: absolute;
-  top: 10%;
-  left: 35%;
+  width: 80%
+  margin-left:auto;
+  margin-right: auto;
   text-align: center;
+
 }
 .newsletterSectionWrapper > h1{
+  padding-top: 40px;
   font-size: 3em;
   font-family: 'rock salt';
   letter-spacing: 15px;
@@ -845,12 +856,60 @@ padding-right: 50px;
   color:rgba(145,160,92,1);
 
 }
+@media only screen and  (max-width: 1150px) {
+  #socialMedia{
+    margin-top: 20px;
+    width: 100%
+    /* height: auto; */
+    background-color: #DFDFDF;
+    padding: 30px 0px;
 
+  }
+
+  .socialMediaWrapper{
+    width: 100%;
+    margin: 30px auto 20px auto;
+    text-align: center;
+    padding-left: auto;
+  }
+
+
+/*just a margin*/
+.addressContainer{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .socialMediaPics img{
+  width:150px;
+  height: 150px;
+  margin-right: 10px;
+  }
+  #content-cell{
+
+      position:absolute;
+      top: 10%;
+      left: 20%;
+      right: 10%;
+      /* translate:transformY(-20%); */
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #content-cell h1{
+      font-size: 2em;
+      font-weight: 300;
+      letter-spacing: 1.6px;
+  }
+
+
+}
 
 @media only screen and  (max-width: 1000px) {
 
   label{
-  margin-top: 10px;
+  margin-top: 14.5px;
   display: block;
   cursor: pointer;
   }
@@ -968,4 +1027,135 @@ padding-right: 50px;
 #bag-div hr{
     width: 95%;
 }
+
+
+/*Booking Section starts here*/
+
+#content-cell{
+
+    position:absolute;
+    top: 10%;
+    left: 20%;
+    right: 10%;
+    /* translate:transformY(-20%); */
+}
+
+#content-cell h1{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+#bookNowButton{
+      padding: 15px 20px;
+      letter-spacing: 2px;
+      font-weight: 300;
+}
+}
+
+@media only screen and  (max-width: 530px){
+  label{
+      margin-top: 14.5px;  /*This is the hamburger*/
+
+  }
+  .quoteContainer >p{
+    line-height: 30px;
+      width: 90%;
+  }
+  .socialHeading{
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+
+.addressContainer p:nth-child(2){
+  letter-spacing: 3px;
+  font-weight:bolder;
+  text-transform: uppercase;
+}
+
+.addressContainer p:nth-child(3){
+    line-height: 20px;
+    padding-left: auto;
+    padding-right: auto;
+
+}
+  .socialMediaPics img{
+  width:90px;
+  height: 90px;
+  margin-right: 1px;
+  }
+
+  #naturePic-cell{
+  /* background-image: url("../images/backpack500px.jpg"); */
+
+ }
+
+  #bookNow-cell{
+      width: 100%;
+      height: 60;
+      letter-spacing: 1.5px;
+
+
+  }
+  #content-cell{
+      position: relative;
+      top: 15px;
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 25px;
+    }
+  #content-cell > h1{
+    margin-left: -10px;
+      font-size: 1em;
+      padding-right: 15px;
+      font-weight: bolder;
+    }
+  #content-cell >p{
+    margin-left: -15px;
+    padding: 15px 20px 15px 0;
+      }
+  #content-cell > ul{
+    margin-top: 0;
+    margin-left: -20px;
+}
+  #bookNowButton{
+        padding: 15px 15px;
+        letter-spacing: 1px;
+        font-weight: 300;
+        margin-left: -10px;
+        margin-right: auto;
+  }
+/*News Letter section starts here*/
+
+  #newsletterInput{
+    margin-left: auto;
+    display: block;
+  }
+  #emailAddress{
+    width: 100%;
+    padding: 10px 10px;
+    margin-right: 15px;
+    font-size: .9em;
+    margin-left: 0;
+  }
+
+  #subscribeButton{
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 0;
+  padding: 10px 34%;
+  letter-spacing: 3px;
+  font-weight: 500;
+  font-size: .9em;
+}
+.newsletterSectionWrapper >h1{
+    font-size: 2em;
+}
+
+}
+@media only screen and  (max-width: 1000px){
+.topBG >h1{
+  font-size: 1em;
+  letter-spacing: normal;
+}
+
 }
