@@ -23,7 +23,13 @@ html,body{
   margin-top: 22px;
   letter-spacing: 2PX;
   text-transform: uppercase;
+  font-size: 1.6em;
+}
 
+.topBG #underC{
+  font-size: .001rem;
+  vertical-align: text-top;
+  padding-left:15px;
 }
 .topBG a{
    text-decoration: none;
