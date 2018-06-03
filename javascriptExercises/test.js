@@ -1,46 +1,64 @@
-window.setTimeout(todoList, 3000);  // let's the html load first by delaying
-//the loading time of the function
+var p1 = 0;
+var p2 = 0;
+var maxNumber = 5;
+var gameOver = false;
 
-var todo = [""];
+var p1Button = document.querySelector("#p1Button");
+var p1Score = document.getElementById("p1Score");
 
-function todoList(){
 
-do{
-var choice = prompt("Whatchugado?");
-if(choice === "new")
-{
-newTodo();
+var p2Button = document.querySelector("#p2Button");
+var p2Score = document.getElementById("p2Score");
+
+
+var input = document.getElementById("inputField");
+var winningNumber = document.getElementById("winningNumber");
+var resetButton = document.getElementById("resetButton");
+
+
+
+
+p1Button.addEventListener("click",function(){
+if(!gameOver){
+  p1++;
+  p1Score.textContent = p1;
+
+  if(p1 === maxNumber){
+    p1Score.classList.add("green");
+    gameOver = !gameOver;
+  }
 }
-else if(choice === "todo")
-{
-printTodo();
-}
+});
 
-if(choice === "delete"){
-deleteTodo();
-}
-if(choice === "exit"){
-  alert("bye!"); return;
-}
+p2Button.addEventListener("click",function(){
+  if(!gameOver){
+    p2++;
+    p2Score.textContent = p2;
 
-}while(choice==="new"||choice==="todo"||choice=== "delete");
-  alert("comeback again!");
-  return;
-}
-
-
-function newTodo(){
-  var item = prompt("Enter a new todo: ");
-  todo.push(item); // function pushes an item at the emd of an array
-}
-
-function printTodo(){
-  todo.forEach(function(print){
-  console.log(print);
+    if(p2 === maxNumber){
+      p2Score.classList.add("green");
+      gameOver = !gameOver;
+    }
+  }
   });
-}
 
-function deleteTodo(){
-  var item = prompt("Enter number of item to be deleted: ");
-  todo.splice(item, 1);
-}
+  function reset(){
+    p1 = 0;   //this is a counter
+    p2 = 0;  //this is a counter
+    p1Score.textContent = 0;
+    p2Score.textContent = 0;
+    p1Score.classList.remove("green");
+    p2Score.classList.remove("green");
+    gameOver = false;    // This the part where you had a problem..
+    //try to use false and true next time to keep track of your boolean better
+  }
+
+input.addEventListener("change", function(){
+  winningNumber.textContent = this.value; // no need to typecast here since text display lang naman sya..
+  maxNumber = Number(this.value);  //Typecasting a String to a Number
+  reset();
+});
+
+resetButton.addEventListener("click", function(){
+reset();
+});

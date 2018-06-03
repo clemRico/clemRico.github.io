@@ -1,0 +1,22 @@
+body{
+  background-color: #232323;
+}
+
+h1{
+  color: #fff;
+}
+
+span{
+  color: #fff;
+}
+#container{
+  max-width: 500px;
+  margin: 0 auto;
+}
+.squares{
+  background-color: green;
+  width: 30%;
+  padding-bottom: 30%;
+  float: left;
+  margin:  1.66%;
+}
