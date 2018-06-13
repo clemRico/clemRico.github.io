@@ -1,17 +1,30 @@
 body{
   background-color: #232323;
+  margin: 0;
+  font-family: "Roboto","Oswald";
 }
 
 h1{
   color: #fff;
+  text-align: center;
+  background-color: steelblue;
+  margin: 0;
+  font-family: inherit;
+  font-weight: normal;
+  line-height: 1.1;
+  padding: 20px 0;
 }
 
-span{
-  color: #fff;
+#guessThis{
+  font-size: 2em;
 }
+
+/* span{
+  color: #fff;
+} */
 #container{
   max-width: 500px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
 .squares{
   background-color: green;
@@ -19,4 +32,45 @@ span{
   padding-bottom: 30%;
   float: left;
   margin:  1.66%;
+  border-radius: 15%;
+  transition: background-color 0.7s;
+  -webkit-transition: background-color 0.7s;
+  -moz-transition: background-color 0.7s;
+}
+
+#stripe{
+  background: white;
+  text-align: center;
+  height: 30px;
+  /* padding-top: 10px; */
+}
+
+.selected{
+  background-color: steelblue;
+  color: white;
+}
+
+button{
+  outline: none;
+  border: none;
+  background: none;
+  text-transform: uppercase;
+  height: 100%;
+  color: steelblue;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: inherit;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+
+button:hover{
+  background-color: steelblue;
+  color: white;
+}
+
+#message{
+  display: inline-block;
+  width: 15%;
 }

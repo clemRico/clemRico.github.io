@@ -4,12 +4,23 @@
     <meta charset="utf-8">
     <title>Color Guessing Game</title>
     <link rel="stylesheet" href="colorGame.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
 
   </head>
   <body>
 
-  <h1>The Great <span id="guessThis">RGB</span> Guessing Game</h1>
-  <div><span id="message"></span></div>
+  <h1 id="cBC">The Great
+    <br>
+     <span id="guessThis">RGB</span>
+     <br>
+   Guessing Game</h1>
+  <div id="stripe">
+    <button type="button" id="reset">New Colors</button>
+    <span id="message"></span>
+    <button type="button" class="mode " name="button">EASY</button>
+    <button type="button" class="mode selected" name="button">HARD</button>
+  </div>
+
   <div id="container">
       <div class="squares"></div>
       <div class="squares"></div>
