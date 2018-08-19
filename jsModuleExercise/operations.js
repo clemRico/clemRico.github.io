@@ -1,12 +1,14 @@
-function add(i, j){
- return i + j;
-}
+var Clem = {
+    firstname: "Clempson",
+    lastname: "Rico",
+    age: 34,
+    birthYear: 1984,
+    family: ["Joan", "Quinn", "Denali"],
+    job: "Web Developer",
+    calcAge: function(currentYear){
+    this.age =  currentYear - this.birthYear;
+    }
+};
 
-function subtract(i, j){
-return i - j;
-}
 
-module.exports = {
-  add,
-  subtract
-}
+Clem.calcAge(2021);

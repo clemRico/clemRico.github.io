@@ -43,6 +43,12 @@ input[type=text]{
   resize: vertical;
 }
 
+ /* #city, #state, #zip{
+  margin-right: 40%;
+  margin-bottom: 6px;
+  width: 40%;
+} */
+
 /* Style the container */
 .container {
   border-radius: 5px;
